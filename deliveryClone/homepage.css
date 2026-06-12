@@ -1,0 +1,112 @@
+
+.cont1{
+    background:image-set("homepage.png") right/cover no-repeat;
+    /* background-size: cover; */
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    font-size: 40px;
+    /* gap: 10px; */
+}
+
+#bokx1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    height:40%;
+    width:60%;
+    /* border: 2px solid white; */
+    font-size: 1em;
+    padding-right: 10px;
+    padding-top: 60px;
+    
+}
+
+.two-line{    
+    margin-right: 110px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    /* border: 2px red solid; */
+    /* padding-bottom: 10px; */
+    
+}
+
+
+
+#span{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*================= TABLET ================= */
+
+@media (max-width: 992px){
+
+   .cont1{
+        display: flex;
+        flex-direction: row;
+        /* padding-left: 5px; */
+        /* flex-shrink: 1; */
+        align-items: center;
+        justify-content: end;
+        font-size: 600;
+        width: 90%;
+    }
+
+    #span{
+        font-size: large;
+      
+        
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+   .cont1{
+        display: flex;
+        flex-direction: row;
+        /* padding-left: 5px; */
+        /* flex-shrink: 1; */
+        align-items: center;
+        justify-content: start;
+        font-size: larger;
+        width: 90%;
+    }
+
+    #span{
+        font-size: small;
+        
+        
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    .cont1{
+        display: flex;
+        flex-direction: row;
+        /* padding-left: 5px; */
+        /* flex-shrink: 1; */
+        align-items: center;
+        font-size: smaller;
+        width: 90%;
+    }
+
+    #span{
+        font-size: smaller;
+        display:block;
+    }
+
+}

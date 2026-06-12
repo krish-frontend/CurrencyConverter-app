@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    height: 5rem;
+    text-align: center;
+    background-color: darkblue;
+    color: aliceblue;
+    line-height: 5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.choice{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    
+}
+
+img{
+    height: 190px;
+    width: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 2px red dotted; */
+    
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    /* border: 2px pink dotted; */
+    gap: 20px;
+    
+}
+
+.choice:hover{
+    background-color: black;
+    cursor: pointer;
+    /* opacity: 0.5; */
+}
+
+
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap:30px;
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    height: 80px;
+    font-size: 1.5rem;
+}
+
+.score{
+    width: 80px;
+    height: 80px;
+    /* border: 2px blue solid; */
+    /* text-align: start; */
+
+    
+}
+
+#u-score, #sys-score{
+    font-size: 4rem;
+}
+
+.mssg-cont{
+    margin-top: 5rem;
+}
+
+#msg{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}

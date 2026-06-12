@@ -1,0 +1,181 @@
+
+
+.cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 730px;
+    width: 99vw;
+    /* margin: 20px 30px; */
+    /* margin-top: 60px; */
+    background-color: black;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 99%;
+    width:80%;
+    background:black;
+    margin: 20px 30px;
+    color: white;
+    
+}
+
+
+.headDiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /* border: 2px solid rgb(251, 246, 246); */
+    width: 90%;
+    height: 10%;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    
+}
+
+
+#divFlex{
+    /* display:grid;
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 90%; 
+    /* border: 2px solid rgb(214, 202, 202);  */
+    gap: 180px;
+    line-height: 23px;
+    box-sizing: border-box;
+    
+}
+
+.temp{
+    /* border: 2px solid rgb(186, 183, 183); */
+    width: 195px;
+    gap: 10px;
+    
+    
+
+}
+
+.h1{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.p3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    text-wrap: wrap;
+    font-weight: 300;
+    color: #ccc;
+
+}
+
+#knowMore{
+    text-decoration: none;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
+
+#knowMore:hover{
+    color: white;
+}
+
+/*================= TABLET ================= */
+
+@media (max-width: 992px){
+
+   .cont2{
+        height: auto;
+        width: auto;
+    }
+
+   .div1{
+     margin: 0;
+     height: fit-content;
+     padding: 30px;
+   }
+   
+    #divFlex{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 100px;
+    
+   }
+
+    .headDiv, .p3, .h1{
+        font-size: larger;
+        line-height: 30px;
+        padding:0
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+   .cont2{
+        height: auto;
+    }
+
+   .div1{
+     margin: 0;
+     height: fit-content;
+     padding: 30px;
+   }
+   
+    #divFlex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 100px;
+    
+   }
+
+    .headDiv, .p3, .h1{
+        font-size: large;
+        line-height: 20px;
+        padding:0
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    .cont2{
+        height: auto;
+    }
+
+   .div1{
+     margin: 0;
+     height: fit-content;
+     padding: 20px;
+   }
+   
+    #divFlex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 100px;
+    
+   }
+
+    .headDiv, .p3, .h1{
+        font-size: smaller;
+        line-height: 15px;
+        padding:0
+    }   
+
+}

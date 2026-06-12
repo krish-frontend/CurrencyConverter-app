@@ -1,0 +1,88 @@
+
+.animated{
+    /* display: inline-block; */
+    /* position: fixed; */
+    height: 47px;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(247, 219, 208);
+    padding: 10px 0;
+    border-bottom: 2px solid red;
+
+    position:sticky;
+    top:80px;
+
+    z-index:1000;
+    
+}
+
+
+#p{
+    align-items: center;
+    white-space: nowrap;   /* no wrap mean text in one line not go second */
+    animation: moveLeft 30s linear infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+p:hover{
+    animation-play-state: paused;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px){
+
+    .animated{
+        height: 20px;
+        padding: 0;
+    }
+
+    #p{
+        font-size: medium;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    .animated{
+        height: 20px;
+        padding: 0;
+    }
+
+    #p{
+        font-size: small;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    .animated{
+        height: 10px;
+        padding-bottom: 20px;
+        /* overflow: visible; */
+    }
+
+    #p{
+        font-size: 6px;
+    }
+
+}

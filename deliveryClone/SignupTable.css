@@ -1,0 +1,313 @@
+
+
+#bokx2{
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    height:99%;
+    width:45%;
+    /* border: 2px solid white; */
+    padding-left: 8px;
+    margin-bottom: 110px;
+}
+
+#signup{
+    height:70%;
+    width:70%;
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 6px;
+    
+}
+
+#tableForm{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+
+th{
+    font-size:16px;
+    /* border: 2px solid red; */
+    /* display: inline-block; */
+    text-align: left;
+    width: 140px;
+    height: 30px;
+    text-wrap: nowrap;
+    
+}
+
+th>a{
+    text-decoration: none;
+    color: #ccc;
+    
+}
+
+
+.th:hover{
+    text-decoration: underline red;
+    a {color: black;
+     
+    }
+    
+}
+
+
+.p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+
+}
+
+
+
+
+.slideTab{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 50px;
+    width: 99%;
+    text-wrap: nowrap;
+    font-size: 16px;  
+    color: #ccc;
+    margin: 10px 0;
+   
+          
+}
+
+.box{
+    display: flex;
+    border: 1px solid #ccc;
+    /* border-collapse: collapse; */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.box:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+#inpBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+input,button{
+    height: 50px;
+    width: 99%;    
+    border-radius: 6px;
+    margin: 10px;
+
+}
+
+input{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: medium;
+    }
+
+
+    
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: progress;
+    margin-bottom: 1px;
+    font-weight: 600;
+
+}
+
+.p2{
+    display: block;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    /* border: 2px solid #ccc; */
+    /* margin-bottom: 10px; */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.linkbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        
+        /* border: 2px solid black; */
+
+}
+
+#box-1, #box-2{
+    
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border: 2px solid #ccc;
+    width: 42%;
+    height: 45px;   
+    /* padding-top: 4px; */
+    border-radius: 4px;
+}
+
+.img{        
+    font-size: small;
+    width: 100%;
+  
+}
+
+
+.marginLink{
+    margin-top: 20px;
+}
+
+/*================= TABLET ================= */
+
+@media (max-width: 992px){
+
+   #signup{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    /* width: 80%; */
+
+    
+   }
+
+    th{
+    font-size: medium;
+    text-wrap: wrap;
+    padding: 4px;
+   }
+
+   .p1{
+        font-size: medium;
+   }
+
+   .slideTab{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;  
+    text-wrap: wrap;
+   }
+
+   .box{
+    
+    padding: 10px;
+    text-wrap: wrap;
+    
+   }
+
+   
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+   
+
+   #signup{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 80%;
+    
+   }
+
+    th{
+    font-size: small;
+    text-wrap: wrap;
+    padding: 4px;
+   }
+
+   .p1{
+        font-size: small;
+   }
+
+   .slideTab{
+    display: flex;
+   display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: auto;
+    text-wrap: wrap;
+   }
+
+   .box{
+    flex-wrap: wrap;
+    padding: 2px;
+    text-wrap: wrap;
+    
+   }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    #bokx2{
+        font-size: small;
+        height: fit-content;
+    }
+    
+    #signup{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 80%;
+    
+   }
+
+   th{
+    font-size: smaller;
+    text-wrap: wrap;
+    padding: 4px;
+   }
+
+   .p1{
+        font-size: small;
+   }
+
+   .slideTab{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: auto;
+    text-wrap: wrap;
+   }
+
+   .box{
+    flex-wrap: wrap;
+    padding: 2px;
+    text-wrap: wrap;
+    font-size: smaller;
+    
+   }   
+
+}

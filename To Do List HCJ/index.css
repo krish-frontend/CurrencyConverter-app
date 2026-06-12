@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* bodystyle */
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e8f4f8;
+}
+
+/* container to hold everything */
+
+.container{
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);    
+    width: 500px;
+}
+
+/* heading style */
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color:#1a73e8;
+    text-align: center;
+    font-family: cursive;
+}
+
+/* addtak btn */
+.add{
+    width: 80px;
+    color: black;
+    height: 20px;
+    border-radius: 10px ;
+    cursor: pointer;
+
+}
+
+.add:hover{
+    background-color: rgb(152, 226, 228);
+    color: black;
+}
+
+/* input container for task entry */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* input box style */
+input[type="text"]{
+    width:80%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #1a73e8;
+    outline: 4px ridge rgb(170 50 220 / 0.6);
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="text"]:focus{
+    border-color: #0056b3;
+    box-shadow: 0 0 5px #0056b3;
+}
+
+/* add btn styel */
+button{
+    /* padding: 12px 20px; */
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(152, 226, 228);
+}
+
+/* task list style */
+ul{
+     list-style: '👉';
+     padding: 0;
+}
+
+/* task item style  */
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 1rem;
+}
+
+li span {
+    flex: 1;
+    text-align: center;
+}
+
+
+/* task completely button style  */
+li button{
+    background-color: transparent;
+    color: greenyellow;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+li button:hover{
+    color: dark green;
+}
+
+/* remove btn  */
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.complete-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: green;
+}

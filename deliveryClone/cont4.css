@@ -1,0 +1,147 @@
+
+
+.cont4{
+    background-color:black;
+    /* border: 2px solid rgb(221, 96, 208); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 99vw; 
+    text-align: center;
+    
+    color: white;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+.p6{
+    display: inline-block;
+    font-size: 26px;
+    
+}
+
+.cont4-b2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    /* border: 2px solid greenyellow; */
+    width: 40vw;
+    margin-top: 30px;
+    padding-bottom: 10px;   
+    padding-right: 20px;
+    column-gap: 15px;
+    
+}
+
+.c4-btn{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+/*================= TABLET ================= */
+
+@media (max-width: 992px){
+
+   
+   .cont4{
+        flex-direction: column;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-top: 30%;
+        font-size: large;
+        text-wrap: wrap;
+    }
+   
+    .p6{
+        font-size: large;
+        text-align: center;
+        padding:0
+    }  
+    .pp6{
+        font-size: large;
+    }
+
+    .cont4-b2{
+        /* display: inline; */
+        /* font-size: smaller; */
+        align-self: center;
+    }
+
+    .c4-btn{
+        font-size: medium;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+   .cont4{
+        flex-direction: column;
+        height: fit-content;
+        flex-wrap: wrap;
+         /* margin-top: 4%; */
+        font-size: medium;
+        text-wrap: wrap;
+    }
+   
+    .p6{
+        font-size: medium;
+        text-align: center;
+        padding:0
+    }  
+    .pp6{
+        font-size: medium;
+    }
+
+    .cont4-b2{
+        /* display: inline; */
+        /* font-size: smaller; */
+        align-self: center;
+    }
+
+    .c4-btn{
+        font-size: small;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    .cont4{
+        flex-direction: column;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-top: 30%;
+        font-size: small;
+        text-wrap: wrap;
+    }
+   
+    .p6{
+        font-size: small;
+        text-align: center;
+        padding:0;
+    }  
+    .pp6{
+        font-size: small;
+    }
+
+    .cont4-b2{
+        display: block;
+        /* font-size: smaller; */
+        align-self: center;
+    }
+
+    .c4-btn{
+        font-size: smaller;
+    }
+
+
+}

@@ -1,0 +1,321 @@
+.footerDiv{
+    height: 900px;
+    width: 99vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.footdiv-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* border: 2px solid black; */
+    width: 74vw;
+    
+}
+
+.logo2{
+    height: 30px;
+    /* border: 2px solid yellow; */
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.p5{
+    /* border: 2px solid red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+
+
+#table2{
+    border-collapse: collapse;
+    width: 78%;
+    font-size: 8px;
+    word-wrap: break-word;
+    
+}
+
+.thh,.tdd{
+    text-align: left;
+    /* border: 1px solid black; */
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 6px;
+    cursor: pointer;
+    
+    padding-left: 30px;
+   
+
+
+}
+
+.tdd{
+    font-size: small;
+    
+}
+
+
+.footdiv-2{
+    /* border: 2px solid black; */
+    width: 74vw;
+    height: 20%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+
+.footb1{
+    width: 88%;
+    height: 80%;
+    /* border: 2px solid black; */
+}
+.p7{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+    font-size: 13px
+
+    
+}
+
+.footb2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12%;
+    height: 40px;
+    /* border: 2px solid pink; */
+    margin-top: 15px;
+    
+    
+}
+
+.foot-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    /* border: 2px red; */
+    background-color: blue;
+    border-radius: 50%;
+    height: 25px;
+    background-color:white ;
+    gap:4px;
+}
+
+.foot-img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+
+/*================= TABLET ================= */
+
+@media (max-width: 992px){
+
+   
+    
+
+    .footdiv-1{
+        /* height: auto; */
+        width: 99%;
+        justify-content: start;
+    }
+
+    .logo2{
+        height: 40px;
+        /* margin: 10px; */
+
+    }
+
+    .p5{
+        font-size: 10px;
+        margin-bottom: 25px;
+        line-height: 20px;
+    }
+
+    
+   #table2{
+        width: 100%;
+        
+    }
+
+    .thh,
+    .tdd{
+        padding-left: 12px;
+
+        font-size: 10px;
+
+        text-align: center;
+
+        text-wrap: wrap;
+    }
+
+    .footdiv-2{
+        align-items: flex-start;
+        height: fit-content;
+        margin-top: 50px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* width: 99%; */
+        justify-content: space-between;
+        height:auto;
+        column-gap: 100px;
+        margin-left: -120px;
+        
+    }
+
+    .p7{
+        font-size: medium;
+        
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+   
+    .footerDiv{
+        /* width: 99%; */
+        /* flex-direction: row; */
+        font-size: smaller;
+    }
+
+    .footdiv-1{
+        /* height: auto; */
+        width: 99%;
+        justify-content: start;
+    }
+
+    .logo2{
+        height: 30px;
+        /* margin: 10px; */
+
+    }
+
+    .p5{
+        font-size: 8px;
+        margin-bottom: 20px;
+        line-height: 15px;
+    }
+
+    
+   #table2{
+        width: 100%;
+        
+    }
+
+    .thh,
+    .tdd{
+        padding-left: 5px;
+
+        font-size: 8px;
+
+        text-align: center;
+
+        text-wrap: wrap;
+    }
+
+    .footdiv-2{
+        align-items: flex-start;
+        height: fit-content;
+        margin-top: 30px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* width: 99%; */
+        justify-content: space-between;
+        height:auto;
+        column-gap: 100px;
+        margin-left: -50px;
+        
+    }
+
+    .p7{
+        font-size: small;
+    }
+
+    
+}
+/* ================= SMALL MOBILE ================= */
+
+@media (min-width:0) and (max-width: 480px){
+
+    .footerDiv{
+        /* width: 99%; */
+        /* flex-direction: row; */
+        font-size: smaller;
+    }
+
+    .footdiv-1{
+        /* height: auto; */
+        width: 99%;
+        justify-content: start;
+    }
+
+    .logo2{
+        height: 20px;
+        /* margin: 10px; */
+
+    }
+
+    .p5{
+        font-size: 6px;
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
+
+    
+   #table2{
+        width: 100%;
+        
+    }
+
+    .thh,
+    .tdd{
+        padding-left: 5px;
+
+        font-size: 6px;
+
+        text-align: center;
+
+        text-wrap: wrap;
+    }
+
+    .footdiv-2{
+        align-items: flex-start;
+        height: fit-content;
+        margin-top: 20px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* width: 99%; */
+        justify-content: space-between;
+        height:auto;
+        column-gap: 100px;
+        
+    }
+
+    .p7{
+        font-size: small;
+    }
+
+    
+}
