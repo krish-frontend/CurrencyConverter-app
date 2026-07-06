@@ -6,21 +6,21 @@
     <title>Rock-Paper-Scissor</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body >
     <h1>Rock-Paper-Scissor</h1>
     
 <!-- img div -->
     <div class="choices">
-        <div class="choice" id="rock">
-            <img src="./images/rock.png.jpg" alt="rock" >
+        <div class="choice" id="Rock">
+            <img src="./images/rock.png.jpg" alt="Rock" >
         </div>
 
-        <div class="choice" id="paper">
-            <img src="./images/paper.png.jpg" alt="paper" >
+        <div class="choice" id="Paper">
+            <img src="./images/paper.png.jpg" alt="Paper" >
         </div>
 
-        <div class="choice" id="scissor">
-            <img src="./images/scissor.png.jpg" alt="scissor" >
+        <div class="choice" id="Scissor">
+            <img src="./images/scissor.png.jpg" alt="Scissor" >
         </div>
 
     </div>
@@ -28,12 +28,15 @@
 <!-- score calculate div  -->
     <div class="score-board">
 
-        <div class="score" >
+        <div class="score">
+            
+            <p id="gestureSelect1">--Select--</p>
             <p id="u-score">0</p>
-            <p>You Points!</p>
+            <p>Your Points!</p>
         </div>
 
-        <div class="score" >
+        <div class="score">
+             <p id="gestureSelect2">--Select--</p>             
             <p id="sys-score">0</p>
             <p>System Points!</p>
         </div>
@@ -43,8 +46,14 @@
 <!-- result massage show -->
  <div class="mssg-cont">
     <p id="msg">Your Turn!!</p>
+    <button id="btnRound">Play Next Round</button>
 
 
+<footer >
+    <p id="footer">
+        Developed by Krish Kumar © 2026.| Rock Paper Scissors Game | All Rights Reserved.
+    </p> 
+</footer>
 
     <script src="index.js"></script>
  </div>
