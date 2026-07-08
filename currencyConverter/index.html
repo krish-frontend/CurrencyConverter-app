@@ -12,19 +12,20 @@
     <div class="container">
         <h2>
             Currency Converter
-        </h2>        
+        </h2>      
 
         <!-- //amount div// -->
         <form action="#">
             <div>
-                <p>Enter Amount</p>
+                <b><p>Enter Amount</p></b>
                 <input value="100" type="text">
             </div>
+            <br>
 
             <!-- DROPDWON FOR currecy -->
             <div class="dropdown">
                 <div class="from"> 
-                    <p>From</p>
+                   <b><p>From</p></b> 
                     <div class="container select">
                         <img src="https://flagsapi.com/US/flat/64.png" alt="#">
                         <select name="from">
@@ -34,31 +35,32 @@
                             <option value="EUR">EUR</option>
                         </select>
                     </div>
-                </div>
+                </div><br><br>
 
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+               <b><p style="font-size:xx-large;">&#8644;</p></b> <br>
 
                 <div class="to">
-                    <p>To</p>
+                    <b><p>To</p></b>
                     <div class="container select">
                         <img src="https://flagsapi.com/IN/flat/64.png" alt="">
                         <select name="from">INR
-                            <option value="USD">USD</option>
                             <option value="INR">INR</option>
+                            <option value="USD">USD</option>
                             <option value="AUS">AUS</option>
                             <option value="EUR">EUR</option>
                         </select>
                     </div>
-                </div>
+                </div> <br>
 
-                <div>
-                    <p>1 USD = 80 INR</p>
-                    <button> Get Exchange Rate</button>
-                </div>
                 
-
+                
             </div>
-
+            
+            <div>
+                <b><p>1 USD = 80 INR</p></b>
+                <br>
+                <button> Get Exchange Rate</button>
+            </div>
         </form>
     </div>
 

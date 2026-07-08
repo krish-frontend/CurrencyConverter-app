@@ -19,25 +19,49 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+   
     border: 2px solid black;
     text-align: center;
     padding: 4px;
-    /* min-height: 20vh;
-    width: 60vw; */
+    min-height: 20vh;
+    /* width: 60vw; */
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
 }
 
+.dropdown{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+/* here */
 
 .from,.to{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    
 }
 
 
 form select,input, button{
-    width: 90%;
-    height:40px;
+    /* width: 100%;
+    height:20px;
+    align-items: center; */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+form input{
+    border: 1px solid lightgray;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    height: 30px;
+    padding-left: 10px;
 }
