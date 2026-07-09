@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(130, 130, 220);
+   background: url("gradient-1783597094282.png") no-repeat center / cover;
 }
 
 .container{
@@ -19,41 +19,67 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+    /* color: rgb(243, 240, 244); */
    
-    border: 2px solid black;
+    /* border: 2px solid black; */
     text-align: center;
     padding: 4px;
     min-height: 20vh;
+    min-width: 10vw;
     /* width: 60vw; */
-    border-radius: 4px;
-    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    /* background: url("gradient-1783596746175.png") no-repeat center / cover; */
+    background-color: aliceblue;
 }
+
+
 
 .dropdown{
     display: flex;
     justify-content:center;
     flex-direction: row;
     align-items: center;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     padding: 5px;
 }
 
-/* here */
+.exchangeSign{
+    font-size: xx-large;
+    margin-top: 15px;
+}
+
 
 .from,.to{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    justify-content: start;
+    /* border: 2px solid rgb(233, 222, 222) ;    */
+    text-align:center;
+ 
     
 }
+.container-select{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 30px;
+    /* border-radius: 20px; */
+    border: 1px solid lightgray; 
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-color: aqua;
+}
 
+.container-select img{
+    max-width: 60px;
+}
 
 form select,input, button{
     /* width: 100%;
     height:20px;
     align-items: center; */
-    border: none;
+    border: 2px solid rgb(233, 222, 222);
     outline: none;
     border-radius: 40px;
 }
@@ -64,4 +90,17 @@ form input{
     font-family: 'Times New Roman', Times, serif;
     height: 30px;
     padding-left: 10px;
+}
+
+#mssgBox{
+    margin: 2rem 0;
+}
+
+button{
+   height: 40px;
+   width: 90%;
+   font-family:'Times New Roman', Times, serif;
+   font-size: medium;
+   background-color: purple;
+   color: white;
 }

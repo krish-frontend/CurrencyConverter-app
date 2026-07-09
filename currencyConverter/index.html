@@ -26,9 +26,9 @@
             <div class="dropdown">
                 <div class="from"> 
                    <b><p>From</p></b> 
-                    <div class="container select">
+                    <div class="container-select">
                         <img src="https://flagsapi.com/US/flat/64.png" alt="#">
-                        <select name="from">
+                        <select name="from" class="select">
                             <option value="USD">USD</option>
                             <option value="INR">INR</option>
                             <option value="AUS">AUS</option>
@@ -37,27 +37,25 @@
                     </div>
                 </div><br><br>
 
-               <b><p style="font-size:xx-large;">&#8644;</p></b> <br>
+               <b><p class="exchangeSign">&#8644;</p></b> <br>
 
                 <div class="to">
                     <b><p>To</p></b>
-                    <div class="container select">
+                    <div class="container-select">
                         <img src="https://flagsapi.com/IN/flat/64.png" alt="">
-                        <select name="from">INR
+                        <select name="from" class="select">INR
                             <option value="INR">INR</option>
                             <option value="USD">USD</option>
                             <option value="AUS">AUS</option>
                             <option value="EUR">EUR</option>
                         </select>
                     </div>
-                </div> <br>
-
-                
+                </div> <br>     
                 
             </div>
             
             <div>
-                <b><p>1 USD = 80 INR</p></b>
+                <b><p id="MssgBox">1 USD = 80 INR</p></b>
                 <br>
                 <button> Get Exchange Rate</button>
             </div>
