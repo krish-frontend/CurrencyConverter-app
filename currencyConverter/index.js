@@ -1,13 +1,15 @@
 
-// const BASE_URL= "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/{apiVersion}/{endpoint}";
+const BASE_URL = "https://api.exchangerate.fun/latest?base=USD"
 
-let dropDown = document.querySelectorAll(".container-select");
+let dropDowns = document.querySelectorAll(".container-select");
 
-for(let select of dropDown){
-    for(currCode in countryList){
-        let newOption = document.createElement("option");
-        newOption.innerHTML = currCode;
-        newOption.value = currCode;
-        select.append(newOption); 
+
+for(let selectItem of dropDowns){
+    for (let key in countryList) {
+    // console.log(key, countryList[key]);
+        let newOption = document.createElement("option")
+        newOption.innerText =key;
+        newOption.value = key;
+        selectItem.append(newOption)
 }
 }
