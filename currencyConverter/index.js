@@ -2,6 +2,7 @@
 const BASE_URL = "https://api.exchangerate.fun/latest?base=USD"
 
 let dropDowns = document.querySelectorAll(".container select");
+let btn = document.querySelector("button");
 
 
 for(let selectItem of dropDowns){
@@ -24,6 +25,18 @@ for(let selectItem of dropDowns){
 };
 
 const updateFlag = (ele2)=>{
-    let currCode = ele2.value
-    let 
+    let currCode = ele2.value;
+    let countryCode = countryList[currCode];
+    let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    let img = ele2.parentElement.querySelector("img");
+    img.src =newSrc;
 }
+
+btn.addEventListener("click",(event)=>{
+    event.preventDefault();
+    let amount = document.querySelector("input");
+    let amountVal = amount.value;
+    console.log(amountVal);
+})
+
+ 
