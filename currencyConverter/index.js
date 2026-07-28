@@ -5,6 +5,8 @@ const dropDowns = document.querySelectorAll(".container select");
 const btn = document.querySelector("button");
 const fromCurr = document.querySelector(".from select");  
 const toCurr = document.querySelector(".to select");  
+const resultBox = document.querySelector("#MssgBox");
+const signEx = document.querySelector(".exchangeSign");
 
 
 for(let selectItem of dropDowns){
@@ -49,9 +51,20 @@ btn.addEventListener("click",async (event)=>{
 
     let response = await fetch(url);
     let data = await response.json();
-    let exchangeRate = data[toCurr.value];
+    let exchangeRate = data.rates[toCurr.value];
     
-    console.log(exchangeRate);
+    // console.log(exchangeRate*amountVal);
+    resultBox.innerText= `The amount ${amountVal} ${fromCurr.value} convert into ${toCurr.value} is = ${(exchangeRate*amountVal).toFixed(2)}`
+
 })
 
- 
+
+signEx.addEventListener("click",()=>{
+    let temp = fromCurr.value;
+    fromCurr.value = toCurr.value;
+    toCurr.value = temp;
+    updateFlag(fromCurr);
+    updateFlag(toCurr);
+    resultBox.innerText= `The amount ${amountVal} ${fromCurr.value} convert into ${toCurr.value} is = ${(exchangeRate*amountVal).toFixed(2)}`
+
+})
