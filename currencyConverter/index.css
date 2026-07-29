@@ -4,6 +4,15 @@
     padding: 0;    
 }
 
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    background-color: rgb(54, 219, 199);
+    border-radius: 20px;
+    padding: 10px;
+}
 body{
     display: flex;
     flex-direction: row;
@@ -25,8 +34,8 @@ body{
     /* border: 2px solid black; */
     text-align: center;
     padding: 4px;
-    min-height: 20vh;
-    min-width: 40vw;
+    height: 30vh;
+    min-width: 20vw;
     /* width: 60vw; */
     border-radius: 20px;
     /* background: url("gradient-1783596746175.png") no-repeat center / cover; */
