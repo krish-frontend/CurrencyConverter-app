@@ -5,6 +5,11 @@
 }
 
 
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
 h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
@@ -31,10 +36,10 @@ body{
     row-gap: 10px;
     /* color: rgb(243, 240, 244); */
    
-    /* border: 2px solid black; */
+    border: 2px solid black;
     text-align: center;
     padding: 4px;
-    height: 30vh;
+    height: 60vh;
     min-width: 20vw;
     /* width: 60vw; */
     border-radius: 20px;
@@ -57,7 +62,7 @@ body{
 .exchangeSign{
     font-size: xx-large;
     margin-top: 15px;
-    cursor:grab;
+    cursor:pointer;
 }
 
 
@@ -75,7 +80,7 @@ body{
     justify-content: space-evenly;
     width: 70%;
     height: 30px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     border: 1px solid lightgray; 
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;

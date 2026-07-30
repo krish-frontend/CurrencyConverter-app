@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="graph.css">
 </head>
-</nav>
-<h1>
-    Currency Converter
-</h1>      
-<nav>
-    
+
+
 <body>
+    <div class="main">    
     <!-- //heading div// -->
-    <div class="container">
+         <div class="container">
+        
+        <h1>
+            Currency Converter
+        </h1>      
 
         <!-- //amount div// -->
         <form action="#">
@@ -57,17 +58,19 @@
                 <br>
                 <button> Get Exchange Rate</button>
             </div>
-            <div>
-                <canvas id="currencyChart"></canvas>
-            </div>
+            
         </form>
+         </div>
+
+        <div class="graphLive">
+        <div class="graph">
+            <!-- <canvas id="currencyChart"></canvas> -->
+
+        </div>
+
+        </div>
+
     </div>
-
-    <div class="graphLive">
-
-
-    </div>
-
     
     <script src="countryCode.js"></script>
     <script src="index.js"></script>
