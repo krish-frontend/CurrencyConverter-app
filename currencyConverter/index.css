@@ -8,6 +8,8 @@
 .main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    border: 2px solid greenyellow;
 }
 
 h1{
@@ -21,7 +23,7 @@ h1{
 body{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 30px;
@@ -43,11 +45,10 @@ body{
     min-width: 20vw;
     /* width: 60vw; */
     border-radius: 20px;
-    /* background: url("gradient-1783596746175.png") no-repeat center / cover; */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     background-color: aliceblue;
     
 }
-
 
 
 .dropdown{
@@ -88,6 +89,10 @@ body{
     background-color: aqua;
 }
 
+.select:hover{
+    background-color:tomato;
+}
+
 .container-select img{
     max-width: 60px;
 }
@@ -123,4 +128,30 @@ button{
    cursor: pointer ;
    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
    border-radius: 20px;
+}
+
+button{
+background-image: linear-gradient(to right, #a9f073 0%, #68b2a9 51%, #0a2e41 100%);
+}
+
+button{
+    margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
