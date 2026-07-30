@@ -62,8 +62,9 @@ body{
 
 .exchangeSign{
     font-size: xx-large;
-    margin-top: 15px;
+    margin-top: 15px ;
     cursor:pointer;
+    padding-left: 10px;
 }
 
 
@@ -86,15 +87,17 @@ body{
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
+   
 }
 
 .select:hover{
-    background-color:tomato;
+    background-color:rgb(245, 144, 127);
 }
 
 .container-select img{
     max-width: 60px;
+    margin-right: 10px;
 }
 
 form select,input{
@@ -110,8 +113,9 @@ form input{
     border: 1px solid lightgray;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
-    height: 30px;
+    height: 40px;
     padding-left: 10px;
+    width: 70%;
 }
 
 #mssgBox{
