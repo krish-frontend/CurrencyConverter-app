@@ -6,7 +6,7 @@ const btn = document.querySelector("button");
 const fromCurr = document.querySelector(".from select");  
 const toCurr = document.querySelector(".to select");  
 const resultBox = document.querySelector("#MssgBox");
-// const signEx = document.querySelector(".exchangeSign");
+const signEx = document.querySelector(".exchangeSign");
 
 
 for(let selectItem of dropDowns){
@@ -65,7 +65,7 @@ signEx.addEventListener("click",()=>{
     toCurr.value = temp;
     updateFlag(fromCurr);
     updateFlag(toCurr);
-    resultBox.innerText= `The amount ${amountVal} ${fromCurr.value} convert into ${toCurr.value} is = ${(exchangeRate*amountVal).toFixed(2)}`
+    resultBox.innerText= `The amount ${amountVal} ${fromCurr.value} convert into ${toCurr.value} is = ${(exchangeRate*amountVal).toFixed(2)}`;
 
 })
 
